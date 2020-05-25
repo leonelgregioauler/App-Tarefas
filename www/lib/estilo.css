@@ -1,0 +1,15 @@
+#sobre h1 {
+  font-size: 12px;  
+}
+
+#sobre p {
+  font-size: 10px;
+  font-weight: thin;  
+  text-align: center;
+  margin: auto;
+}
+
+#sobre {
+  bottom: 0;
+  position: fixed;
+}

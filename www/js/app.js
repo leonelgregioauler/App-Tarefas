@@ -100,3 +100,12 @@ function changeStatus(idTask){
     }
 }
 
+function abreSiteApacheCordova() {
+  var url = "https://cordova.apache.org/";
+  var options = "";
+  window.open = cordova.InAppBrowser.open(url, "_self", options);	
+}
+
+
+
+

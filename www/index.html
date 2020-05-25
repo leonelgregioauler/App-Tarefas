@@ -6,6 +6,7 @@
   <title>Tarefas - LGA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="lib/estilo.css" />
   <script src="lib/jquery-2.1.1.min.js"></script>
   <script src="js/app.js"></script>
   <script src="lib/jquery.mobile-1.4.5.min.js"></script>
@@ -13,31 +14,38 @@
 
 <body>
 
-<div id="tasksPage" data-role="page">
+  <div id="tasksPage" data-role="page">
     <div data-role="header">
-        <h1>Tarefas - LGA</h1>
-        <a href="#addTask" class="ui-btn ui-btn-right">Adicionar</a>
+      <h1>Tarefas - LGA</h1>
+      <a href="#addTask" class="ui-btn ui-btn-right">Adicionar</a>
     </div>
     <div data-role="content">
-        <ul id="listTasks" data-role="listview">
-            <li> Sem tarefas... </li>
-        </ul>      
+      <ul id="listTasks" data-role="listview">
+        <li> Sem tarefas... </li>
+      </ul>      
     </div>
-</div>
-
-<div id="addTask" data-role="page">
-  <div data-role="header">
-    <a id="_tasksPage" href="#tasksPage" class="ui-btn" data-rel="back">Voltar</a>
-    <h1> Adicionar Tarefa </h1>
+	<div id="sobre" data-role="footer">
+      <h1>Sobre</h1>
+      <p>  Este é um app híbrido e foi desenvolvido utilizando o framework Apache Cordova (antigo PhoneGap)</p>
+	  <p>  Desenvolvido por Leonel Gregio Auler </p>
+	  <h1 onclick="abreSiteApacheCordova();">Site oficial Apache Cordova</h1>
+    </div>
+    
   </div>
-  <div data-role="content">
-     <div class="ui-field-contain">
-       <label for="title">Título:</label>
-       <input type="text" name="title" id="title" value="">
-     </div>
-    <button onclick="btnAddTask_click()">Enviar</button>
- </div>
-</div>
+
+  <div id="addTask" data-role="page">
+    <div data-role="header">
+      <a id="_tasksPage" href="#tasksPage" class="ui-btn" data-rel="back">Voltar</a>
+      <h1> Adicionar Tarefa </h1>
+    </div>
+    <div data-role="content">
+      <div class="ui-field-contain">
+        <label for="title">Título:</label>
+        <input type="text" name="title" id="title" value="">
+      </div>
+      <button onclick="btnAddTask_click()">Enviar</button>
+    </div>
+  </div>
   
 <script src="cordova.js"></script>
 </body>
