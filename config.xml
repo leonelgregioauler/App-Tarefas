@@ -23,5 +23,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-	<allow-navigation="http://google.com.br/" />
+	<allow-navigation="http://google.com.br/*" />
 </widget>
